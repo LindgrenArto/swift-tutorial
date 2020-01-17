@@ -9,6 +9,8 @@ import SwiftUI
 
 struct LandmarkDetail: View {
     var landmark: Landmark
+    
+    @State private var showingAlert = false
 
     var body: some View {
         VStack {
@@ -20,6 +22,11 @@ struct LandmarkDetail: View {
                 .offset(x: 0, y: -130)
                 .padding(.bottom, -130)
 
+           Button(action: {
+           self.showingAlert = true
+           }){Text ("Delete")}
+            
+            
             VStack(alignment: .leading) {
                 Text(landmark.name)
                     .font(.title)
@@ -33,6 +40,13 @@ struct LandmarkDetail: View {
                 }
             }
             .padding()
+                
+                
+            .alert(isPresented: $showingAlert) {
+            Alert(title: Text("Are you sure you want to delete?"), primaryButton: .default(Text("Yes")), secondaryButton: .destructive(Text("Cancel")))
+            }
+               
+            
 
             Spacer()
         }
