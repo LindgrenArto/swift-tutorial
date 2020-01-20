@@ -32,6 +32,7 @@
 		261BF7FE23D18F2100D44DEF /* turtlerock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 261BF7F123D18F2100D44DEF /* turtlerock.jpg */; };
 		261BF7FF23D18F2100D44DEF /* chilkoottrail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 261BF7F223D18F2100D44DEF /* chilkoottrail.jpg */; };
 		261BF80123D18FA500D44DEF /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BF80023D18FA500D44DEF /* LandmarkList.swift */; };
+		2623B5F823D5802E00969A23 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2623B5F723D5802E00969A23 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		261BF7F123D18F2100D44DEF /* turtlerock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = turtlerock.jpg; path = ListAndStuff/Resources/turtlerock.jpg; sourceTree = SOURCE_ROOT; };
 		261BF7F223D18F2100D44DEF /* chilkoottrail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = chilkoottrail.jpg; path = ListAndStuff/Resources/chilkoottrail.jpg; sourceTree = SOURCE_ROOT; };
 		261BF80023D18FA500D44DEF /* LandmarkList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		2623B5F723D5802E00969A23 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			children = (
 				261BF7AD23D189A100D44DEF /* Data.swift */,
 				261BF7B023D189DB00D44DEF /* Landmarks.swift */,
+				2623B5F723D5802E00969A23 /* UserData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				261BF7B123D189DB00D44DEF /* Landmarks.swift in Sources */,
 				261BF7AE23D189A100D44DEF /* Data.swift in Sources */,
 				261BF7E523D18F0500D44DEF /* MapView.swift in Sources */,
+				2623B5F823D5802E00969A23 /* UserData.swift in Sources */,
 				261BF7D723D18C3700D44DEF /* LandmarkRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

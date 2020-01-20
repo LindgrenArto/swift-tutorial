@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Weather.swift
 //  WeatherApp
 //
 //  Created by Arto Lindgren on 17/01/2020.
@@ -8,17 +8,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    
+struct Weather: View {
     var body: some View {
-        
-        BackgroundImage()
+        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-
-struct ContentView_Previews: PreviewProvider {
+struct Weather_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Weather()
     }
 }

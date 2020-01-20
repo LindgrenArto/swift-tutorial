@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct LandmarkList: View {
-    @State private var landmark = landmarkData
+    @EnvironmentObject private var userData: UserData
+    
+    @State var showFavoritesOnly = false
     
     var body: some View {
         NavigationView {
             List{
-                ForEach(landmark) {landmark in
-                    NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-                        LandmarkRow(landmark: landmark)
+                Toggle(isOn: $userData.showFavoritesOnly) {
+                    Text("Show Favorites Only")
+                }
+                ForEach(userData.landmarks) { landmark in
+                    if !self.userData.showFavoritesOnly || landmark.isFavorite {
+                        NavigationLink(
+                            destination: LandmarkDetail(landmark: landmark)
+                                .environmentObject(self.userData)
+                        ) {
+                            LandmarkRow(landmark: landmark)
+                        }
                     }
                 }
                 .onDelete(perform: delete)
@@ -27,10 +37,10 @@ struct LandmarkList: View {
         
     }
     func delete(at offsets: IndexSet) {
-        landmark.remove(atOffsets: offsets)
+        userData.landmarks.remove(atOffsets: offsets)
     }
     func move(from source: IndexSet, to destination: Int) {
-        landmark.move(fromOffsets: source, toOffset: destination)
+        userData.landmarks.move(fromOffsets: source, toOffset: destination)
     }
 }
 
@@ -38,6 +48,7 @@ struct LandmarkList: View {
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
         LandmarkList()
+            .environmentObject(UserData())
         
     }
 }
