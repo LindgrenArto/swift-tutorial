@@ -10,7 +10,7 @@ import UIKit
 import SwiftUI
 import CoreLocation
 
-let weatherData: [Weather] = load("landmarkData.json")
+// let weatherData: [Weather] = load("landmarkData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

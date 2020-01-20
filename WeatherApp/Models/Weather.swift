@@ -6,16 +6,37 @@
 //  Copyright © 2020 Arto Lindgren. All rights reserved.
 //
 
-import SwiftUI
+import Foundation
 
-struct Weather: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
-    }
+struct Weather: Codable {
+    let id, dt, cod, timezone: Int
+    let name, base: String
+    let coord: Coord
+    let weather: [WeatherData]
+    let main: Main
+    let clouds: Clouds
+    let sys: Sys
 }
 
-struct Weather_Previews: PreviewProvider {
-    static var previews: some View {
-        Weather()
-    }
+struct Coord: Codable {
+    let lon, lat: Double
+}
+
+struct WeatherData: Codable, Identifiable {
+    let id: Int
+    let main, description, icon: String
+}
+
+struct Main: Codable {
+    let temp, tempMin, tempMax: Double
+    let pressure, humidity: Int
+}
+
+struct Clouds: Codable {
+    let all: String
+}
+
+struct Sys: Codable {
+    let id, type, sunrise, sunset: Int
+    let country: String
 }
