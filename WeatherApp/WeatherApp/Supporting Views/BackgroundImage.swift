@@ -13,7 +13,7 @@ struct BackgroundImage: View {
     
     var body: some View {
         ZStack{
-        Image("dark_background")
+        Image("light_background")
         .resizable()
         .aspectRatio(contentMode: .fill)
         .edgesIgnoringSafeArea(.all)

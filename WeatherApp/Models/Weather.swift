@@ -33,7 +33,7 @@ struct Main: Codable {
 }
 
 struct Clouds: Codable {
-    let all: String
+    let all: Double
 }
 
 struct Sys: Codable {

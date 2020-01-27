@@ -22,6 +22,7 @@
 		261BF85323D1C70500D44DEF /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261BF85223D1C70500D44DEF /* Weather.swift */; };
 		2623B60F23D5BD1000969A23 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2623B60E23D5BD1000969A23 /* Api.swift */; };
 		2623B61123D5C36000969A23 /* CurrenWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2623B61023D5C36000969A23 /* CurrenWeatherViewModel.swift */; };
+		2623B61323D5CA1800969A23 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2623B61223D5CA1800969A23 /* CurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		261BF85223D1C70500D44DEF /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		2623B60E23D5BD1000969A23 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Api.swift; path = ../../../../Documents/Api.swift; sourceTree = "<group>"; };
 		2623B61023D5C36000969A23 /* CurrenWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrenWeatherViewModel.swift; path = ../../../../Documents/CurrenWeatherViewModel.swift; sourceTree = "<group>"; };
+		2623B61223D5CA1800969A23 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrentWeather.swift; path = ../../../../Documents/CurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				261BF80E23D1A48600D44DEF /* AppDelegate.swift */,
 				261BF81023D1A48600D44DEF /* SceneDelegate.swift */,
 				2623B61023D5C36000969A23 /* CurrenWeatherViewModel.swift */,
+				2623B61223D5CA1800969A23 /* CurrentWeather.swift */,
 				261BF81223D1A48600D44DEF /* ContentView.swift */,
 				261BF81423D1A48600D44DEF /* Assets.xcassets */,
 				261BF81923D1A48600D44DEF /* LaunchScreen.storyboard */,
@@ -317,6 +320,7 @@
 			files = (
 				2623B60F23D5BD1000969A23 /* Api.swift in Sources */,
 				261BF80F23D1A48600D44DEF /* AppDelegate.swift in Sources */,
+				2623B61323D5CA1800969A23 /* CurrentWeather.swift in Sources */,
 				261BF81123D1A48600D44DEF /* SceneDelegate.swift in Sources */,
 				261BF81323D1A48600D44DEF /* ContentView.swift in Sources */,
 				261BF85323D1C70500D44DEF /* Weather.swift in Sources */,
