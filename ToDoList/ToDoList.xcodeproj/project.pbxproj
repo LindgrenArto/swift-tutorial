@@ -15,6 +15,11 @@
 		262F86B323E3FEFA00E30355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 262F86B123E3FEFA00E30355 /* LaunchScreen.storyboard */; };
 		262F86BE23E3FEFA00E30355 /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262F86BD23E3FEFA00E30355 /* ToDoListTests.swift */; };
 		262F86C923E3FEFA00E30355 /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262F86C823E3FEFA00E30355 /* ToDoListUITests.swift */; };
+		262F86D723E4013700E30355 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262F86D623E4013700E30355 /* Helper.swift */; };
+		262F86D923E4014D00E30355 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 262F86D823E4014D00E30355 /* menu.json */; };
+		262F86DB23E4016700E30355 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262F86DA23E4016700E30355 /* Menu.swift */; };
+		262F86DD23E4016B00E30355 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262F86DC23E4016B00E30355 /* Order.swift */; };
+		262F86DF23E4019B00E30355 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 262F86DE23E4019B00E30355 /* Images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		262F86C423E3FEFA00E30355 /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		262F86C823E3FEFA00E30355 /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		262F86CA23E3FEFA00E30355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		262F86D623E4013700E30355 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		262F86D823E4014D00E30355 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		262F86DA23E4016700E30355 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		262F86DC23E4016B00E30355 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		262F86DE23E4019B00E30355 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Images; path = Assets.xcassets/Images; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,15 @@
 		262F86A523E3FEF900E30355 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				262F86DC23E4016B00E30355 /* Order.swift */,
+				262F86DA23E4016700E30355 /* Menu.swift */,
+				262F86D623E4013700E30355 /* Helper.swift */,
+				262F86D823E4014D00E30355 /* menu.json */,
 				262F86A623E3FEF900E30355 /* AppDelegate.swift */,
 				262F86A823E3FEF900E30355 /* SceneDelegate.swift */,
 				262F86AA23E3FEF900E30355 /* ContentView.swift */,
 				262F86AC23E3FEFA00E30355 /* Assets.xcassets */,
+				262F86DE23E4019B00E30355 /* Images */,
 				262F86B123E3FEFA00E30355 /* LaunchScreen.storyboard */,
 				262F86B423E3FEFA00E30355 /* Info.plist */,
 				262F86AE23E3FEFA00E30355 /* Preview Content */,
@@ -240,8 +255,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				262F86DF23E4019B00E30355 /* Images in Resources */,
 				262F86B323E3FEFA00E30355 /* LaunchScreen.storyboard in Resources */,
 				262F86B023E3FEFA00E30355 /* Preview Assets.xcassets in Resources */,
+				262F86D923E4014D00E30355 /* menu.json in Resources */,
 				262F86AD23E3FEFA00E30355 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,9 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				262F86DD23E4016B00E30355 /* Order.swift in Sources */,
 				262F86A723E3FEF900E30355 /* AppDelegate.swift in Sources */,
 				262F86A923E3FEF900E30355 /* SceneDelegate.swift in Sources */,
 				262F86AB23E3FEF900E30355 /* ContentView.swift in Sources */,
+				262F86D723E4013700E30355 /* Helper.swift in Sources */,
+				262F86DB23E4016700E30355 /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
