@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  CoreDataTodo
+//  CoreDataDoToV2
 //
 //  Created by Arto Lindgren on 03/02/2020.
 //  Copyright © 2020 Arto Lindgren. All rights reserved.
@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     
     @Environment(\.managedObjectContext) var managedObjectContext
-    @FetchRequest(fetchRequest: ToodoItem.getAllTodoItems()) var toodoItems:FetchedResults<ToodoItem>
+    @FetchRequest(fetchRequest: TodoItem.getAllTodoItems()) var todoItems:FetchedResults<TodoItem>
     
     @State private var newTodoItem = ""
     
@@ -43,10 +43,10 @@ struct ContentView: View {
                     }.font(.headline)
                 }
                 Section(header: Text("To Do's")) {
-                    ForEach(self.toodoItems) {toodoitem in
-                        TodoItemView(title: toodoitem.title!, createdAt: "\(toodoitem.createdAt!)")
+                    ForEach(self.todoItems) {todoItem in
+                        TodoItemView(title: todoItem.title!, createdAt: "\(todoItem.createdAt!)")
                     }.onDelete {IndexSet in
-                        let deleteItem = self.toodoItems[IndexSet.first!]
+                        let deleteItem = self.todoItems[IndexSet.first!]
                         
                         self.managedObjectContext.delete(deleteItem)
                         

@@ -1,6 +1,6 @@
 //
 //  TodoItem.swift
-//  CoreDataTodo
+//  CoreDataDoToV2
 //
 //  Created by Arto Lindgren on 03/02/2020.
 //  Copyright © 2020 Arto Lindgren. All rights reserved.
@@ -16,8 +16,8 @@ public class TodoItem:NSManagedObject, Identifiable {
 
 extension TodoItem {
     static func getAllTodoItems() -> NSFetchRequest<TodoItem> {
-        let request : NSFetchRequest<TodoItem> = ToodoItem.fetchRequest() as!
-            NSFetchRequest<ToodoItem>
+        let request : NSFetchRequest<TodoItem> = TodoItem.fetchRequest() as!
+            NSFetchRequest<TodoItem>
         
         let sortDescriptor = NSSortDescriptor(key: "createdAt", ascending: true)
         
