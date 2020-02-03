@@ -15,6 +15,7 @@
 		26F6145523E7F5370092F376 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F6145423E7F5370092F376 /* Preview Assets.xcassets */; };
 		26F6145823E7F5370092F376 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F6145623E7F5370092F376 /* LaunchScreen.storyboard */; };
 		26F6146023E7F5FF0092F376 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6145F23E7F5FF0092F376 /* TodoItem.swift */; };
+		26F6146223E8003F0092F376 /* TodoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6146123E8003F0092F376 /* TodoItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		26F6145723E7F5370092F376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26F6145923E7F5370092F376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26F6145F23E7F5FF0092F376 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		26F6146123E8003F0092F376 /* TodoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +65,13 @@
 				26F6144823E7F5370092F376 /* AppDelegate.swift */,
 				26F6144A23E7F5370092F376 /* SceneDelegate.swift */,
 				26F6144F23E7F5370092F376 /* ContentView.swift */,
+				26F6145F23E7F5FF0092F376 /* TodoItem.swift */,
+				26F6146123E8003F0092F376 /* TodoItemView.swift */,
 				26F6145123E7F5370092F376 /* Assets.xcassets */,
 				26F6145623E7F5370092F376 /* LaunchScreen.storyboard */,
 				26F6145923E7F5370092F376 /* Info.plist */,
 				26F6144C23E7F5370092F376 /* CoreDataTodo.xcdatamodeld */,
 				26F6145323E7F5370092F376 /* Preview Content */,
-				26F6145F23E7F5FF0092F376 /* TodoItem.swift */,
 			);
 			path = CoreDataTodo;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				26F6144B23E7F5370092F376 /* SceneDelegate.swift in Sources */,
 				26F6145023E7F5370092F376 /* ContentView.swift in Sources */,
 				26F6144E23E7F5370092F376 /* CoreDataTodo.xcdatamodeld in Sources */,
+				26F6146223E8003F0092F376 /* TodoItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
