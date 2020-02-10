@@ -14,6 +14,11 @@
 		2606C62823ED453F0090565B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2606C62723ED453F0090565B /* Assets.xcassets */; };
 		2606C62B23ED453F0090565B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2606C62A23ED453F0090565B /* Preview Assets.xcassets */; };
 		2606C62E23ED453F0090565B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2606C62C23ED453F0090565B /* LaunchScreen.storyboard */; };
+		26CDA44A23ED5001000E18A9 /* CameraButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CDA44523ED5001000E18A9 /* CameraButtonView.swift */; };
+		26CDA44B23ED5001000E18A9 /* FriendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CDA44623ED5001000E18A9 /* FriendDetailView.swift */; };
+		26CDA44C23ED5001000E18A9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CDA44723ED5001000E18A9 /* ImagePicker.swift */; };
+		26CDA44D23ED5001000E18A9 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CDA44823ED5001000E18A9 /* FriendsView.swift */; };
+		26CDA44E23ED5001000E18A9 /* FriendRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CDA44923ED5001000E18A9 /* FriendRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		2606C62A23ED453F0090565B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2606C62D23ED453F0090565B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2606C62F23ED453F0090565B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26CDA44523ED5001000E18A9 /* CameraButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraButtonView.swift; path = CameraTutorial/Views/CameraButtonView.swift; sourceTree = SOURCE_ROOT; };
+		26CDA44623ED5001000E18A9 /* FriendDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendDetailView.swift; path = CameraTutorial/Views/FriendDetailView.swift; sourceTree = SOURCE_ROOT; };
+		26CDA44723ED5001000E18A9 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = CameraTutorial/Views/ImagePicker.swift; sourceTree = SOURCE_ROOT; };
+		26CDA44823ED5001000E18A9 /* FriendsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendsView.swift; path = CameraTutorial/Views/FriendsView.swift; sourceTree = SOURCE_ROOT; };
+		26CDA44923ED5001000E18A9 /* FriendRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendRow.swift; path = CameraTutorial/Views/FriendRow.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,7 @@
 		2606C61223ED453E0090565B = {
 			isa = PBXGroup;
 			children = (
+				2606C63F23ED49F80090565B /* Views */,
 				2606C61D23ED453E0090565B /* CameraTutorial */,
 				2606C61C23ED453E0090565B /* Products */,
 			);
@@ -76,6 +87,18 @@
 				2606C62A23ED453F0090565B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2606C63F23ED49F80090565B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26CDA44523ED5001000E18A9 /* CameraButtonView.swift */,
+				26CDA44623ED5001000E18A9 /* FriendDetailView.swift */,
+				26CDA44923ED5001000E18A9 /* FriendRow.swift */,
+				26CDA44823ED5001000E18A9 /* FriendsView.swift */,
+				26CDA44723ED5001000E18A9 /* ImagePicker.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +172,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26CDA44A23ED5001000E18A9 /* CameraButtonView.swift in Sources */,
 				2606C61F23ED453E0090565B /* AppDelegate.swift in Sources */,
+				26CDA44D23ED5001000E18A9 /* FriendsView.swift in Sources */,
 				2606C62123ED453E0090565B /* SceneDelegate.swift in Sources */,
+				26CDA44E23ED5001000E18A9 /* FriendRow.swift in Sources */,
+				26CDA44C23ED5001000E18A9 /* ImagePicker.swift in Sources */,
+				26CDA44B23ED5001000E18A9 /* FriendDetailView.swift in Sources */,
 				2606C62623ED453E0090565B /* ContentView.swift in Sources */,
 				2606C62423ED453E0090565B /* CameraTutorial.xcdatamodeld in Sources */,
 			);
