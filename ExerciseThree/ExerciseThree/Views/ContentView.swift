@@ -26,7 +26,7 @@ struct ContentView: View {
                 self.cam.fetch(self.id)
             }
             CameraView(camera: self.cam.cameraData)
-        }.padding()
+        }
         
     }
 }
