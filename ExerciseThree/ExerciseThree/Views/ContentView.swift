@@ -21,12 +21,12 @@ struct ContentView: View {
     
     var body: some View {
         VStack{
-            Spacer()
+        
             TextField("Hae kameraa Id:llä", text: $id){
                 self.cam.fetch(self.id)
             }
             CameraView(camera: self.cam.cameraData)
-        }
+        }.padding()
         
     }
 }
