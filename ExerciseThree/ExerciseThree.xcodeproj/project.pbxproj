@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		263A548223FA890200014893 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263A548123FA890200014893 /* ImageLoader.swift */; };
+		263A548823FA8A3C00014893 /* TrafficCamDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263A548723FA8A3C00014893 /* TrafficCamDetail.swift */; };
+		264811BD23FA9C8500189998 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264811BC23FA9C8500189998 /* CameraView.swift */; };
+		264811C023FAA50B00189998 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264811BF23FAA50B00189998 /* ImageView.swift */; };
 		26641CAB23F12D8F00C4509B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26641CAA23F12D8F00C4509B /* AppDelegate.swift */; };
 		26641CAD23F12D8F00C4509B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26641CAC23F12D8F00C4509B /* SceneDelegate.swift */; };
 		26641CB023F12D8F00C4509B /* ExerciseThree.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26641CAE23F12D8F00C4509B /* ExerciseThree.xcdatamodeld */; };
@@ -15,10 +19,16 @@
 		26641CB723F12D9000C4509B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26641CB623F12D9000C4509B /* Preview Assets.xcassets */; };
 		26641CBA23F12D9000C4509B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26641CB823F12D9000C4509B /* LaunchScreen.storyboard */; };
 		26641CC323F12FD800C4509B /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26641CC223F12FD800C4509B /* Api.swift */; };
-		26641CC523F1331700C4509B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26641CC423F1331700C4509B /* Data.swift */; };
+		26641CC523F1331700C4509B /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26641CC423F1331700C4509B /* CameraModel.swift */; };
+		266AAC2723F145900076EB52 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 266AAC2623F145900076EB52 /* SwiftyJSON */; };
+		266AAC2923F149890076EB52 /* CamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266AAC2823F149890076EB52 /* CamViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		263A548123FA890200014893 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		263A548723FA8A3C00014893 /* TrafficCamDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficCamDetail.swift; sourceTree = "<group>"; };
+		264811BC23FA9C8500189998 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		264811BF23FAA50B00189998 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		26641CA723F12D8F00C4509B /* ExerciseThree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExerciseThree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26641CAA23F12D8F00C4509B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26641CAC23F12D8F00C4509B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +39,8 @@
 		26641CB923F12D9000C4509B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26641CBB23F12D9000C4509B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26641CC223F12FD800C4509B /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
-		26641CC423F1331700C4509B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		26641CC423F1331700C4509B /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		266AAC2823F149890076EB52 /* CamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,15 +48,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				266AAC2723F145900076EB52 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		263A548023FA88E900014893 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				263A548123FA890200014893 /* ImageLoader.swift */,
+				264811BF23FAA50B00189998 /* ImageView.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		264811BE23FAA36400189998 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				266AAC2823F149890076EB52 /* CamViewModel.swift */,
+				263A548723FA8A3C00014893 /* TrafficCamDetail.swift */,
+				264811BC23FA9C8500189998 /* CameraView.swift */,
+				26641CB123F12D8F00C4509B /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		26641C9E23F12D8F00C4509B = {
 			isa = PBXGroup;
 			children = (
+				26641CC123F12F4900C4509B /* Models */,
+				263A548023FA88E900014893 /* ImageViews */,
 				26641CA923F12D8F00C4509B /* ExerciseThree */,
 				26641CA823F12D8F00C4509B /* Products */,
 			);
@@ -62,10 +96,9 @@
 		26641CA923F12D8F00C4509B /* ExerciseThree */ = {
 			isa = PBXGroup;
 			children = (
-				26641CC123F12F4900C4509B /* Models */,
+				264811BE23FAA36400189998 /* Views */,
 				26641CAA23F12D8F00C4509B /* AppDelegate.swift */,
 				26641CAC23F12D8F00C4509B /* SceneDelegate.swift */,
-				26641CB123F12D8F00C4509B /* ContentView.swift */,
 				26641CB323F12D9000C4509B /* Assets.xcassets */,
 				26641CB823F12D9000C4509B /* LaunchScreen.storyboard */,
 				26641CBB23F12D9000C4509B /* Info.plist */,
@@ -87,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				26641CC223F12FD800C4509B /* Api.swift */,
-				26641CC423F1331700C4509B /* Data.swift */,
+				26641CC423F1331700C4509B /* CameraModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -108,6 +141,9 @@
 			dependencies = (
 			);
 			name = ExerciseThree;
+			packageProductDependencies = (
+				266AAC2623F145900076EB52 /* SwiftyJSON */,
+			);
 			productName = ExerciseThree;
 			productReference = 26641CA723F12D8F00C4509B /* ExerciseThree.app */;
 			productType = "com.apple.product-type.application";
@@ -136,6 +172,9 @@
 				Base,
 			);
 			mainGroup = 26641C9E23F12D8F00C4509B;
+			packageReferences = (
+				266AAC2523F145900076EB52 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 26641CA823F12D8F00C4509B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -164,9 +203,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				26641CB023F12D8F00C4509B /* ExerciseThree.xcdatamodeld in Sources */,
-				26641CC523F1331700C4509B /* Data.swift in Sources */,
+				264811BD23FA9C8500189998 /* CameraView.swift in Sources */,
+				263A548823FA8A3C00014893 /* TrafficCamDetail.swift in Sources */,
+				26641CC523F1331700C4509B /* CameraModel.swift in Sources */,
+				264811C023FAA50B00189998 /* ImageView.swift in Sources */,
 				26641CAB23F12D8F00C4509B /* AppDelegate.swift in Sources */,
 				26641CB223F12D8F00C4509B /* ContentView.swift in Sources */,
+				266AAC2923F149890076EB52 /* CamViewModel.swift in Sources */,
+				263A548223FA890200014893 /* ImageLoader.swift in Sources */,
 				26641CC323F12FD800C4509B /* Api.swift in Sources */,
 				26641CAD23F12D8F00C4509B /* SceneDelegate.swift in Sources */,
 			);
@@ -360,6 +404,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		266AAC2523F145900076EB52 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		266AAC2623F145900076EB52 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 266AAC2523F145900076EB52 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		26641CAE23F12D8F00C4509B /* ExerciseThree.xcdatamodeld */ = {
